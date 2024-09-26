@@ -5,18 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h1{
         p{
             font-size: 30px;
-            color: blue;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+            color: wheat;
+            background-color: black;
             
         }
+    }
+    .myclass{
+        background-color: crimson;
+        color: white;
+
+    }
+    #myid{
+        background-color: rgb(255, 251, 0);
+        color: crimson;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    h6{
+        color: blue !important;
+        font-size: 40px;
+    }
+    .heading{
+        color: crimson;
+    }
+    #myheading{
+        color: green;
+    }
+
+
 
 
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <H1 style="color: red; font-size: 50px;">inline CSS is used to style individual element only</H1>
 
-    <p>the total number of pregnancies that a female has carried past 20 weeks of pregnancy. </p>
+    <p class="myclass"> myself vedansh yadav pursuing btech from bbdu </p>
+
+    <h2 class="myclass">Class selector are used to select element by thier class name </h2>
+
+    <h3 id="myid">Id selectors are used to select element by thier id name</h3>
+
+    <p id="myid">this side vedansh yadav </p>
+
+    <h6 class="heading" id="myheading" style="color: violet;" >Priority of selectors :id>class>name</h6>
+
+    <button class="btn">submit here </button>
+
 </body>
 </html>
