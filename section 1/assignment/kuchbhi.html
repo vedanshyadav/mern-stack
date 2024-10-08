@@ -1,0 +1,62 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto p-4 pt-6">
+        <h1 class="text-3xl font-bold mb-4">Movie Ticket Booking</h1>
+        <form>
+            <!-- User Information -->
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name:</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="John Doe">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email:</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="john.doe@example.com">
+            </div>
+
+            <!-- Movie Selection -->
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="movie">Select a Movie:</label>
+                <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="movie">
+                    <option value="">Select a Movie</option>
+                    <option value="movie1">Movie 1</option>
+                    <option value="movie2">Movie 2</option>
+                    <option value="movie3">Movie 3</option>
+                </select>
+            </div>
+
+            <!-- Ticket Selection -->
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="ticket">Select a Ticket:</label>
+                <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="ticket">
+                    <option value="">Select a Ticket</option>
+                    <option value="ticket1">Ticket 1</option>
+                    <option value="ticket2">Ticket 2</option>
+                    <option value="ticket3">Ticket 3</option>
+                </select>
+            </div>
+
+            <!-- Seat Selection -->
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="seat">Select a Seat:</label>
+                <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="seat">
+                    <option value="">Select a Seat</option>
+                    <option value="seat1">Seat 1</option>
+                    <option value="seat2">Seat 2</option>
+                    <option value="seat3">Seat 3</option>
+                </select>
+            </div>
+
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* styles.css */
+
+/* navigation menu styling */
+nav ul {
+    @apply flex justify-between items-center py-4;
+}
+
+nav li {
+    @apply mr-6;
+}
+
+nav a {
+    @apply text-gray-600 hover:text-gray-900;
+}
