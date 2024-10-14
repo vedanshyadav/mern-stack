@@ -29,3 +29,22 @@ else{
     
 }
 console.log(abc);
+//WAp to check if it is a number is positive or negtive or zero
+
+num=500;
+
+if(num>0){
+    console.log("positive");
+
+    
+}
+
+else if(num<0){
+    console.log("negative");
+    
+}
+
+else{
+    console.log("zero");
+    
+}
