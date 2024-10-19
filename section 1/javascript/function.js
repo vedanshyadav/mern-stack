@@ -65,3 +65,4 @@ const daygreed = (time) => {
 }
 const res1 = daygreed("evening");
 console.log(res1);
+
