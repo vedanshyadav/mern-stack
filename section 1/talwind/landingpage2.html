@@ -1,68 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
     <style>
-        *{
-            font-family: Roboto;
-        }
+      * {
+        font-family: Roboto;
+      }
 
-        
-        .content{
-            border: 2px solid green;
-            width: 80%;
-            margin: 0 auto;
+      .content {
+        /* border: 2px solid green; */
+        width: 80%;
+        margin: 0 auto;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70vh;
-                flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        flex-direction: column;
+      }
+      .hero-tittle {
+        font-size: 40px;
+      }
 
-        }
-        .hero-tittle{
+      .hero-subtittle {
+        font-size: 30px;
+      }
 
-            font-size:40px ;
+      .hero-btn {
+      }
 
-            
+      .hero-section {
+        background-image: linear-gradient(0deg, #ffffff59, #00000086),
+          url(https://assets.unenvironment.org/decadeonrestoration/2020-03/nature-3294681_1280%20%281%29.jpg);
+        text-align: center;
+        background-size: cover;
+      }
+      .body {
+        margin: 0;
+      }
+      .hero-btn {
+        padding: 10px, 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
 
+        font-size: 1.2em;
+        margin-top: 30px;
+      }
+      .card {
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px 0 #00000072;
+        transition-duration: 0.3s;
+      }
+      .card:hover {
+        transform: translatey(-20px);
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
 
-        }
+        width: 80%;
 
-        .hero-subtittle{
-            font-size: 30px;
+        margin: 50px auto;
+      }
 
+      .card img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+      }
+      .card-body {
+        padding: 30px;
+      }
 
-        }
+      .footer-content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+      }
 
-        .hero-btn{
-            
-        }
+      .footer {
+        padding: 40px 0;
+        background-color: #383838;
+      }
+
+      .links {
+        display: flex;
+        color: azure;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+      }
+      .links a {
+        color: white;
+        text-decoration: none;
+      }
+      .links:hover{
+        color: #0000ff4c;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
+      <article>
+        <section class="hero-section">
+          <div class="content">
+            <h1 class="hero-tittle">welcome to our 1st website</h1>
+            <p class="hero-subtittle">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae iusto quisquam at hic! Dignissimos adipisci consequatur
+              ratione deleniti, quasi, atque maiores deserunt natus quam labore
+              laudantium, repudiandae non illo quae!
+            </p>
+            <button class="hero-btn">EXPLORE</button>
+          </div>
+        </section>
+        <section class="feature-section">
+          <div class="card-container">
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/1307598573/vector/startup-new-business-project-development-process-innovation-product-creative-idea-start-up.jpg?s=612x612&w=0&k=20&c=W0Ny8GQkhnsudZHVIN4UXfhu-wnoBsrPIcWhugS19fs="
+                alt="featuresx"
+              />
+              <div class="card-body">
+                <h3 class="card-tittle">Feature Tittle 1</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas odit eius reprehenderit vero accusantium ab laborum
+                  dolor in magnam a Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Nihil, quis?.
+                </p>
 
-        <article>
+                <button class="card-btn">Learn More</button>
+              </div>
+            </div>
 
-            <section class="hero-section">
-                <div class="content ">
-                    <h1 class="hero-tittle">welcome to our 1st website </h1>
-                    <p class="hero-subtittle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita similique dolorem tempore eveniet suscipit sint neque pariatur quod nulla nihil!</p>
-                    <button class="hero-btn">EXPLORE</button>
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/1307598573/vector/startup-new-business-project-development-process-innovation-product-creative-idea-start-up.jpg?s=612x612&w=0&k=20&c=W0Ny8GQkhnsudZHVIN4UXfhu-wnoBsrPIcWhugS19fs="
+                alt="featuresx"
+              />
+              <div class="card-body">
+                <h3 class="card-tittle">Feature Tittle 1</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas odit eius reprehenderit vero accusantium ab laborum
+                  dolor in magnam a Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Nihil, quis?.
+                </p>
 
+                <button class="card-btn">Learn More</button>
+              </div>
+            </div>
 
+            <div class="card">
+              <img
+                src="https://media.istockphoto.com/id/1307598573/vector/startup-new-business-project-development-process-innovation-product-creative-idea-start-up.jpg?s=612x612&w=0&k=20&c=W0Ny8GQkhnsudZHVIN4UXfhu-wnoBsrPIcWhugS19fs="
+                alt="featuresx"
+              />
+              <div class="card-body">
+                <h3 class="card-tittle">Feature Tittle 1</h3>
+                <p class="card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas odit eius reprehenderit vero accusantium ab laborum
+                  dolor in magnam a Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Nihil, quis?.
+                </p>
 
-                </div>
-
-                
-
-            </section>
-        </article>
+                <button class="card-btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
-    
-</body>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h3>TCS INFOTECH</h3>
+          <p>All Rights Reserved &copy; 2024</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="links">
+          <a href="">Home</a>
+          <a href="#">About </a>
+          <a href="#">About us </a>
+          <a href="#">Contact us </a>
+          <a href="#">Career With us </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
