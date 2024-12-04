@@ -1,58 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <article>
+      <article>
+        <nav class="bg-gray-500 rounded-full my-5">
+          <div class="flex justify-between items-center py-4 px-10">
+            <div class="logo">
+              <img
+                src="anurag.webp"
+                alt="logo"
+                class="size-[70px] rounded-full"
+              />
+            </div>
+            <div class="nav-links">
+              <ul class="flex items-center gap-5">
+                <li><a href="#" class="text-white text-xl"> Home</a></li>
+                <li><a href="#" class="text-white text-xl"> About</a></li>
+                <li><a href="#" class="text-white text-xl"> Services</a></li>
+                <li><a href="#" class="text-white text-xl"> Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="py-20">
+          <div class="w-[80%] mx-auto grid md:grid-cols-2">
+            <div
+              class="hero-content my-auto space-y-8 md:order-first order-last"
+            >
+              <h1
+                class="text-3xl text-center md:text-5xl md:text-left font-bold"
+              >
+                Welcome To Site
+              </h1>
+              <p class="text-center md-text-left">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error,
+                quidem corporis veniam sunt facere cupiditate excepturi suscipit
+                quasi ducimus. Consectetur accusantium dolor maxime dolores
+                tenetur molestiae, unde saepe deleniti magni.
+              </p>
 
-            <nav class="bg-gray-500 rounded-full my-5"> 
-                <div class="flex justify-between items-center py-4 px-10">
-                    <div class="logo">
-                        <img src="anurag.webp" alt="logo" class="size-[70px] rounded-full">
+              <div class="flex gap-3 justify-center md:justify-start">
+                <button class="bg-violet-500 text-white p-2 rounded">
+                  Learn More
+                </button>
+                <button
+                  class="border border-violet-500 text-voilet-500 p-2 rounded"
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
 
-                    </div>
-                    <div class="nav-links">
-                        <ul class="flex items-center gap-5">
-                            <li><a href="#" class="text-white text-xl  "> Home</a></li>
-                            <li><a href="#" class="text-white text-xl "> About</a></li>
-                            <li><a href="#" class="text-white text-xl "> Services</a></li>
-                            <li><a href="#" class="text-white text-xl "> Contact</a></li>
-                        </ul>
+            <div class="hero-image">
+              <img
+                src="https://th.bing.com/th/id/OIP.nJ46CLptcGAq_i7v_RBIlwHaGs?rs=1&pid=ImgDetMain  "
+                alt=""
+              />
+            </div>
+          </div>
+        </section>
+        <section class="py-20 px-20">
+          <div class="grid grid-cols-4 justify-items-center gap-10">
+            <div
+              data-tilt
+              class="bg- w-[300px] h-[400px] border-2 border-black rounded-2xl"
+            >
+              <div class="">
+                <img
+                  class="rounded-xl"
+                  src="https://helios-i.mashable.com/imagery/articles/05KYVM1Hfu3F1HTGyPQkvtM/hero-image.fill.size_1248x702.v1623384463.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="bg- w-[300px] h-[400px] border-2 border-black">
+              <div class="w-full flex justify-center items-center">
+                <img
+                  class="rounded-xl"
+                  src="https://www.sneakernovel.com/wp-content/uploads/2020/12/Nike-Dunk-Low-University-Blue-DD1391-102-Release-Date-Pricing-1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="bg- w-[300px] h-[400px] border-2 border-black">
+              <img
+                class="w-full flex justify-center items-center"
+                src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/398846/09/sv01/fnd/IND/fmt/png/Speedcat-OG-Unisex-Sneakers"
+              />
+            </div>
+            <div class="bg- w-[300px] h-[400px] border-2 border-black"></div>
+            <div class="bg- w-[300px] h-[400px] border-2 border-black"></div>
+            <div class="bg- w-[300px] h-[400px] border-2 border-black"></div>
+            <div class="bg- w-[300px] h-[400px] border-2 border-black"></div>
+            <div class="bg- w-[300px] h-[400px] border-2 border-black"></div>
+          </div>
+                
+        </section>
 
-
-                    </div>
-                </div>
-            </nav>
-            <section class="py-20">
-                <div class=" w-[80%] mx-auto grid md:grid-cols-2">
-                    <div class="hero-content my-auto space-y-8 md:order-first order-last">
-                        <h1 class="text-3xl text-center md:text-5xl md:text-left font-bold">Welcome To Site </h1>
-                        <p class="text-center md-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, quidem corporis veniam sunt
-                            facere cupiditate excepturi suscipit quasi ducimus. Consectetur accusantium dolor maxime
-                            dolores tenetur molestiae, unde saepe deleniti magni.</p>
-
-                            <div class="flex gap-3 justify-center md:justify-start">
-                                <button class="bg-violet-500 text-white p-2 rounded">Learn More</button>
-                                <button class="border border-violet-500 text-voilet-500 p-2 rounded">Explore</button>
-                            </div>
-                        
-                    </div>
-                   
-                    <div class="hero-image ">
-                        <img src="https://th.bing.com/th/id/OIP.nJ46CLptcGAq_i7v_RBIlwHaGs?rs=1&pid=ImgDetMain  " alt="">
-                    </div>
-                </div>
-            </section>
-        </article>
+        <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4 ">
+          <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <a
+                href="https://flowbite.com/"
+                class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+              >
+                <img
+                  src="https://flowbite.com/docs/images/logo.svg"
+                  class="h-8"
+                  alt="Flowbite Logo"
+                />
+                <span
+                  class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                  >Flowbite</span
+                >
+              </a>
+              <ul
+                class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400"
+              >
+                <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline me-4 md:me-6"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <hr
+              class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+            />
+            <span
+              class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+              >© 2023
+              <a href="https://flowbite.com/" class="hover:underline"
+                >Flowbite™</a
+              >. All Rights Reserved.</span
+            >
+          </div>
+        </footer>
+      </article>
     </main>
 
-</body>
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+  </body>
 </html>
